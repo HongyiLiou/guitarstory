@@ -1,0 +1,151 @@
+$color_orange: #D6B79C
+
+*
+  font-family: 微軟正黑體
+  // debug用
+  // border: solid 1px #666
+  // header
+  //   display: none
+  // section
+  //   display: none
+  // section#section_future
+  //   display: block
+
+  
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+  
+nav.navbar
+  transition-duration: 0.5s
+  
+nav.navbar.navbar-default.navbar-fixed-top
+  transition-duration: 0.5s
+  background: linear-gradient(to left,white, rgba(#F0CBAA, 0.9))
+  
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  transition-duration: 0.5s
+  background: transparent
+  a
+    color: white
+    transition: 0.3s
+    &:hover
+      color: $color_orange
+      background-color: rgba(#E3A042,0.2)
+  
+body
+  height: 1000px
+  
+header.jumbotron
+  background-color: rgba(0,0,0,0)
+  text-align: center
+  margin-bottom: 0px
+  &:before
+    content: ""
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -1
+    background-image: url(https://i.ytimg.com/vi/k1WqYDq4EnM/maxresdefault.jpg)
+    background-size: cover
+    background-position: center center
+    background-attachment: fixed
+    filter: brightness(50%)
+  .container
+    color: white
+    padding: 200px 0px
+  hr
+    max-width: 50px
+    border: solid 2px $color_orange
+  h4
+    color: rgba(white,0.5)
+    font-weight: normal
+    letter-spacing: 1px
+    
+section
+  padding: 50px 0px
+ 
+section#section_ask
+  background-color: $color_orange
+  .col-sm-5.img
+    background-image: url(https://s3.amazonaws.com/audioassemble/audioassemble/wp-content/uploads/2016/12/31213619/acoustic.jpg)
+    background-size: cover
+    background-position: center center
+    height: 350px
+    mix-blend-mode: multiply
+  h2
+    margin-top: 130px
+    padding: 0px 20px
+    
+section#section_about
+  img
+    width: 130%
+  img.fr
+    width: 170%
+  img,img.fr
+    transform: translateX(-15%)
+  .img_wrap
+    height: 220px
+    overflow: hidden
+  h3
+    margin-top: 15px
+  p
+    font-size: 14px
+    
+section#section_story
+  background-color: #222
+  color: white
+  padding: 0
+  .col-sm-5
+    background-image: url(http://s3-us-west-2.amazonaws.com/s3.947.fm/styles/delta__775x515/s3/dreamstime_s_29404108_3.jpg?itok=zxhSnkIe)
+    background-size: cover
+    background-position: center center
+    mix-blend-mode: lighten
+    height: 400px
+    .cross
+      position: absolute
+      left: 25%
+      top: 60%
+      color: white
+      font-size: 30px
+  .col-sm-7
+    text-align: center
+    i
+      font-size: 40px
+  .col-sm-12.features
+    margin-top: 40px
+    margin-bottom: 40px
+    
+section#section_future
+  img
+    width: 100%
+    
+footer.jumbotron
+  background-color: rgba(0,0,0,0)
+  text-align: center
+  margin-bottom: 0px
+  content: ""
+  display: block
+  width: 100%
+  left: 0
+  bottom: 0
+  z-index: -1
+  background-image: url(https://i.ytimg.com/vi/k1WqYDq4EnM/maxresdefault.jpg)
+  background-size: cover
+  background-position: center center
+  background-attachment: fixed
+  input
+    background-color: transparent
+    max-width: 300px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    
+  .container
+    color: white
+    padding: 60px 0px
+  hr
+    max-width: 50px
+    border: solid 2px $color_orange

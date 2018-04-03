@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>bootstrap-結合skrollr製作捲動式網頁</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<nav class="navbar navbar-default navbar-fixed-top navbar-top">
+  <div class="container">
+    <div class="navbar-header"><a class="navbar-brand" href="https://www.facebook.com/YokoyamaGuitars/" target="_blank">Yokoyama Guitars</a></div>
+    <div class="navbar-collapse collapse">
+      <div class="nav navbar-nav navbar-right">
+        <li><a href="#section_ask">引言 INTRO</a></li>
+        <li><a href="#section_about">故事 STORY</a></li>
+        <li><a href="#section_story">簡介 ABOUT</a></li>
+        <li><a href="#section_future">現況 STATUS</a></li>
+      </div>
+    </div>
+  </div>
+</nav>
+<header class="jumbotron disable">
+  <div class="container">
+    <h1 data-0="transform: translateY(-50px)" data-500="transform: translateY(200px)">吉他，最自由的樂器</h1>
+    <hr/>
+    <h4>The Most Free Instrument</h4>
+  </div>
+</header>
+<section id="section_ask">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 img" data-0="transform: translateX(-200px)" data-500="transform: translateX(0px)"></div>
+      <div class="col-sm-7" data-200="opacity: 0" data-500="opacity: 1">
+        <h2>如果今天沒有吉他，音樂的演變會變成什麼樣子呢?</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_about">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">
+        <h1>Story</h1>
+        <hr/>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1"><img class="fr" src="https://images3.imgbox.com/63/bd/adgbpTUW_o.jpg" alt=""/></div>
+        <h3 data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">名稱由來</h3>
+        <p data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">「吉他（結他）」一詞，來自英語 guitar 的音譯。而自古至今，即便是使用不同的語言文字的國家，對於這個樂器的稱呼，都有相似的發音，例如：西班牙語，guitarra；法語，guitare；德語，Gitarre；義大利語，chitarra。而「tar」這個字根，則是出自梵語，在波斯（今伊朗）及北印度一帶，有「弦」的意義；後來這個語詞的流傳，又經歷了古希臘的 kithara (cithara)，阿拉伯語的 gitara，以及古法語的 guiterne，最後才演變為現代英語 guitar。</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1"><img src="http://media.culturemap.com/crop/58/ac/600x600/Taylor-Swift-rocking_065704.jpg" alt=""/></div>
+        <h3 data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">起源</h3>
+        <p data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">吉他雖然是一種古老的彈撥樂器，但關於它的起源卻是眾說紛云，目前所知道的說法有三種：第一種就是前面所描述的，源自歐洲古希臘的西塞拉琴 kithara (Cithara)。第二種，是美索不達米亞平原的長頸魯特琴演變說。第三種則認為，吉他是演變自古埃及的哥普特琉特琴（Copric Lute），由當時的阿拉伯－摩爾人傳入歐洲，並逐漸演變成的今天的吉他。</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1"><img src="https://pbs.twimg.com/profile_images/563642305437900800/CUtC-zbX.jpeg" alt=""/></div>
+        <h3 data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">演進</h3>
+        <p data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">在中世紀階段，歐洲音樂仍未發展出完整的和聲概念，因此吉他展開了漫長的演進之路：<br>文藝復興時期（十六世紀初）：通過西班牙的制琴師和演奏者不斷的探索和改進，吉他逐漸定型為類似現在常見的古典吉他。同時，隨著吉他的發展，也產生了許多著名的吉他演奏家和教育家。另外，當時的西班牙皇室將這個「平民的小玩意」定為正式的宮廷樂器，這也使得吉他進入了發展的第一個黃金時期。<br><br>古典時期（十八世紀中後期）：德國人將原來的五弦吉他改裝成六弦吉他，而且皆改為單弦，不再使用弦組。這樣的改變，使得吉他的發展步入第二個黃金時期。<br><br>19世紀初：吉他的外觀開始定型，並慢慢演變成我們現今所看到的樣子，更以其獨特的魅力風靡全世界，在這段期間，湧現了許多傑出的吉他演奏家和作曲家。<br><br>19世紀後期：被譽為「現代吉他之父」的弗朗西斯科·塔雷加和塞戈維亞，在總結前人經驗的基礎上，改進完善了許多演奏技巧，並創作了大量且優秀的吉他作品，使得一度流行於民間的吉他，終於真正登上古典音樂的聖堂。這是吉他發展史上的第三個黃金時期。<br><br>20世紀至今：吉他已經成為世界上最為風靡的樂器之一，其多樣的風格、出色的表現力、豐富的技巧、迷人的音色無不深深吸引著人們。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_story">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-5 map" data-bottom-top="background-size: 150%; background-position: 0% 0%;" data-center="background-size: 100%; background-position: 50% 50%;">
+        <div class="cross fa fa-music"></div>
+      </div>
+      <div class="col-sm-7">
+        <div class="col-sm-12">
+          <h2>吉他的分類</h2>
+          <hr/>
+        </div>
+        <div class="col-sm-12 features">
+          <div class="col-sm-4" data-bottom-top="transform: scale(1.5);opacity: 0" data-center="transform: scale(1);opacity: 1"><i class="fa fa-music"></i>
+            <h4>古典吉他</h4>
+          </div>
+          <div class="col-sm-4" data-bottom-top="transform: scale(1.5);opacity: 0" data-center="transform: scale(1);opacity: 1"><i class="fa fa-headphones"></i>
+            <h4>民謠吉他</h4>
+          </div>
+          <div class="col-sm-4" data-bottom-top="transform: scale(1.5);opacity: 0" data-center="transform: scale(1);opacity: 1"><i class="fa fa-bolt"></i>
+            <h4>電吉他</h4>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <p>吉他可概略分為兩大類：其一，是歴史悠久，以木製共鳴箱擴音的木吉他。其二，是發明於二十世紀，以拾音器加上揚聲器來擴音的電吉他。木吉他常被用於古典音樂、民間音樂及流行音樂的演奏或伴奏。電吉他則是在搖滾樂、藍調、爵士樂及流行音樂中，佔有其特殊的地位。而電吉他的發明與問世，對西方流行文化及音樂發展也有很重要的影響。然而，隨著電子科技與工藝技術的進步與結合，吉他的面貌及內涵，又有了更多的轉變。現代的吉他，依據其構造方式、發聲原理、功能取向的不同，又可以再細分為夏威夷吉他、古典吉他、民謠吉他、佛朗明哥吉他及電吉他。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_future">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>現代的吉他的表演風格</h2>
+        <hr/>
+      </div>
+      <div class="col-sm-6"><img src="http://www.kcmusic.jp/images/daddario/daddario_artist_yukimatsui_02.jpg" alt="" data-bottom-top="filter: grayscale(100%)" data-center="filter: grayscale(0%)"/></div>
+      <div class="col-sm-6" data-bottom-top="transform:translateX(50px)" data-center="transform:translateX(0px)">
+        <h3>古典風格</h3>
+        <p>使用古典吉他 彈奏，可說是吉他演奏中藝術性最強的一種，對於彈奏姿勢及單音的音色處理特別講究，通常以獨奏或二重奏的方式來演奏傳統的古典音樂。</p>
+        <h3>民謠</h3>
+        <p>使用民謠吉他 (鋼弦吉他)彈奏，最早是美國西部鄉村音樂的伴奏樂器，現今多用於流行音樂的歌唱伴奏，可以說是最為普遍的吉他彈奏型態。</p>
+        <h3>佛朗明哥 (Flamenco)</h3>
+        <p>一種發源於西班牙南部的藝術形式，具有強烈節奏性，帶給人們熱情奔放的感受。除了吉他的演奏之外，通常還會伴隨歌唱及舞蹈來表現，其音樂風格亦有濃厚的拉丁民族特色。</p>
+        <h3>指彈風格 (Finger Style)</h3>
+        <p>不限彈奏的吉他種類，不用彈片 (picks)，在一支琴上以手指同時彈奏伴奏與主旋律。此種彈奏風格，可說是集古典吉他、民謠吉他，再加上少部份電吉他彈奏手法與技巧於一身的綜合體，因此指彈吉他在樂曲聲響效果的表現上，可說是相當地多豐富且元。除了古典樂曲、流行歌曲的改編與演奏之外，在另一方面，更有演奏家創作了許多有個人色彩的樂曲。</p>
+        <h3>法朵</h3>
+        <p>發源於葡萄牙的一種傳統民歌。</p>
+        <h3>搖滾風格 (Rock)</h3>
+        <p>使用電吉他彈奏，起源於1940年代美國，配合爵士鼓、低音吉他(貝斯)、人聲演出，彈奏方式依據分類而有所不同，大部分皆注重節奏感及速彈等技巧。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="jumbotron disable">
+  <div class="container">
+    <h2>想了解更多吉他相關的故事嗎?</h2>
+    <input class="form-control" placeholder="Email"/>
+    <hr/>
+    <button class="btn btn-default">訂閱故事</button>
+  </div>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
